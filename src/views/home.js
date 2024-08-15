@@ -1,5 +1,9 @@
-export function Home(props) {
+export function home() {
   const viewEl = document.createElement('div');
-  viewEl.textContent = '¡Este es el home!';
+  viewEl.innerHTML = `
+    <h1>Bienvenido al Dataverse Chat</h1>
+    <p>Explora y conéctate con otros personajes.</p>
+  `;
   return viewEl;
 }
+export default home;
